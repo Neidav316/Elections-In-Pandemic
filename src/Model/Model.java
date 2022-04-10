@@ -1,21 +1,17 @@
 package Model;
 
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 
 import Model.Ballot.eBallotType;
-import Model.Candidate.Roles;
 import Model.Party.eFaction;
 import View.ManageUI;
 import java.sql.*;
@@ -27,7 +23,6 @@ public class Model implements ManageUI, Serializable {
 	private Elections fastRound;
 	
 	private QueryElections jdbc;
-	private ResultSet rs;
 	
 	private int ballotSerialNum;
 	private String citizenId, partyName;
@@ -35,7 +30,7 @@ public class Model implements ManageUI, Serializable {
 	private Ballot chosenBallotBox;
 	private Citizen chosenCitizen;
 	private Party chosenParty;
-	private int citizenIndex, candidateIndex, partyIndex, ballotIndex;
+	private int citizenIndex, partyIndex, ballotIndex;
 	StringBuffer ballotResults, partyResults;
 
 	public Model() throws FileNotFoundException, ClassNotFoundException, IOException {

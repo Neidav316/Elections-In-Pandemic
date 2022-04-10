@@ -262,8 +262,7 @@ public class View implements ManageUI, Serializable {
 			creatingVotingWindow((ArrayList<Party>) obj1, (Citizen) obj2);
 		} else if (kind == "Showing results") {
 			createShowResultsWindow((ArrayList<Party>) obj1, (ArrayList<Ballot<?>>) obj2);
-		}// else if (kind == "Exit") {
-		//}
+		}
 	}
 
 	// Get the toggle group choice
@@ -286,8 +285,7 @@ public class View implements ManageUI, Serializable {
 			return rbElections.getText();
 		else //if (rbShowResults.isSelected())
 			return rbShowResults.getText();
-	//	else
-		//	return rbExit.getText();
+
 	}
 
 	// change listener has been created in Control
@@ -332,8 +330,7 @@ public class View implements ManageUI, Serializable {
 			return rbElections.getText();
 		else //if (rbShowResults.isSelected())
 			return rbShowResults.getText();
-		//else
-		//	return rbExit.getText();
+
 	}
 
 	public boolean checkingNumAsStringContent(String txt, String type) {

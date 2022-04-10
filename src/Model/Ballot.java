@@ -3,7 +3,6 @@ package Model;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-//import Model.MySet;
 
 @SuppressWarnings("serial")
 public class Ballot<T extends Citizen> implements Serializable {

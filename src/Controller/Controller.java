@@ -1,6 +1,5 @@
 package Controller;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -79,38 +78,6 @@ public class Controller implements Serializable {
 		theView.addEventToExit(ExitProgram);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		// Loading old data from binary file section
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		// Loading old data
-		/*EventHandler<ActionEvent> loadingOldData = new EventHandler<ActionEvent>() {
-
-			public void handle(ActionEvent arg0) {
-				try {
-					theModel.readDataBase();
-				} catch (ClassNotFoundException | IOException e) {
-					e.printStackTrace();
-				}
-				theModel.resetingResults();
-				theView.showMessage("You decided to load the old data that exist");
-				theView.createWindowForElectionDate();
-			}
-
-		};
-		theView.addEventToLoadOldData(loadingOldData);
-
-		// Not loading old data
-		EventHandler<ActionEvent> notLoadingOldData = new EventHandler<ActionEvent>() {
-
-			public void handle(ActionEvent arg0) {
-				theModel.setElectionsData();
-				theView.showMessage("You decided to not load the old data the exist");
-				theView.createWindowForElectionDate();
-			}
-
-		};
-		theView.addEventToNotLoadOldData(notLoadingOldData);*/
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 		// Enter elections date section
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Handling with the election date input
@@ -165,7 +132,6 @@ public class Controller implements Serializable {
 		theView.addEventToEnterElectionFulLDate(enterElectionFullDate);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		// Creating ballot box section
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
